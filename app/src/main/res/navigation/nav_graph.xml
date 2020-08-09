@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.tiktaktoy.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_singlePlayerFragment"
+            app:destination="@id/singlePlayerFragment"
+            app:enterAnim="@anim/fade_in_enter"
+            app:exitAnim="@anim/fade_in_exit"
+            app:popEnterAnim="@anim/fade_out_enter"
+            app:popExitAnim="@anim/fade_out_exit" />
+        <action
+            android:id="@+id/action_homeFragment_to_multiPlayerFragment"
+            app:destination="@id/multiPlayerFragment"
+            app:enterAnim="@anim/fade_in_enter"
+            app:exitAnim="@anim/fade_in_exit"
+            app:popEnterAnim="@anim/fade_out_enter"
+            app:popExitAnim="@anim/fade_out_exit" />
+        <action
+            android:id="@+id/action_homeFragment_to_localMultiPlayerFragment"
+            app:destination="@id/localMultiPlayerFragment"
+            app:enterAnim="@anim/fade_in_enter"
+            app:exitAnim="@anim/fade_in_exit"
+            app:popEnterAnim="@anim/fade_out_enter"
+            app:popExitAnim="@anim/fade_out_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/singlePlayerFragment"
+        android:name="com.example.tiktaktoy.ui.fragment.SinglePlayerFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_single_player" />
+    <fragment
+        android:id="@+id/multiPlayerFragment"
+        android:name="com.example.tiktaktoy.ui.fragment.MultiPlayerFragment"
+        android:label="MultiPlayerFragment" />
+    <fragment
+        android:id="@+id/localMultiPlayerFragment"
+        android:name="com.example.tiktaktoy.ui.fragment.LocalMultiPlayerFragment"
+        android:label="LocalMultiPlayerFragment" />
+</navigation>

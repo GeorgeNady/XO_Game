@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.LocalMultiPlayerFragment">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="355dp"
+        android:layout_height="355dp"
+        android:background="@drawable/grid"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="11dp"
+            android:contentDescription="@string/app_name"
+            android:tag="0"
+            tools:src="@drawable/o"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/btn2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="11dp"
+            android:contentDescription="@string/app_name"
+            android:tag="1"
+            tools:src="@drawable/o"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/btn3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="11dp"
+            android:contentDescription="@string/app_name"
+            tools:src="@drawable/o"
+            android:tag="2"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/btn4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="11dp"
+            android:contentDescription="@string/app_name"
+            android:tag="3"
+            tools:src="@drawable/o"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/btn5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="11dp"
+            android:contentDescription="@string/app_name"
+            android:tag="4"
+            tools:src="@drawable/o"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/btn6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="11dp"
+            android:contentDescription="@string/app_name"
+            android:tag="5"
+            tools:src="@drawable/o"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/btn7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="11dp"
+            android:contentDescription="@string/app_name"
+            android:tag="6"
+            tools:src="@drawable/o"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/btn8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="11dp"
+            android:contentDescription="@string/app_name"
+            android:tag="7"
+            tools:src="@drawable/o"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/btn9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="11dp"
+            android:contentDescription="@string/app_name"
+            android:tag="8"
+            tools:src="@drawable/o"
+            tools:targetApi="lollipop" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/ivWinner"
+        android:layout_width="355dp"
+        android:layout_height="355dp"
+        android:alpha="0"
+        android:contentDescription="@string/app_name"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/winner_card"
+        app:layout_constraintBottom_toBottomOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="@+id/gridLayout" />
+
+    <ImageView
+        android:id="@+id/ivWinnerLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:contentDescription="@string/app_name"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/winner_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="@+id/ivWinner" />
+
+    <TextView
+        android:id="@+id/tvWinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:alpha="0"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:shadowColor="#80000000"
+        android:shadowRadius="20"
+        android:text="@string/winner"
+        android:textAlignment="center"
+        android:textColor="@color/o_color"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:clickable="false"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/ic_refresh"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="10dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWinner"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
